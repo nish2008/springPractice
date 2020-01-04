@@ -16,6 +16,7 @@ public class FactoryService {
 	public Object getBean(String beanType) {
 		
 		if (beanType.equalsIgnoreCase("shapeService"))
+			System.out.print("ssdf");
 			return new ShapeServiceProxy();
 		
 		if (beanType.equalsIgnoreCase("circle"))
